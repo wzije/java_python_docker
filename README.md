@@ -23,14 +23,14 @@
    compilation terminated.
    error: command 'gcc' failed with exit status 1
 
-         ----------------------------------------
+   ----------------------------------------
    Command "/usr/lib/python3.6.6/bin/python3.6 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-labi968q/cffi/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-t4nbxvbv/install-record.txt --single-version-externally-managed --prefix /tmp/pip-build-env-r9ugyqb3/overlay --compile" failed with error code 1 in /tmp/pip-install-labi968q/cffi/
    ```
 
    Solution : install libffi-dev
 
    ```vim
-      apk add libffi-dev
+   apk add libffi-dev
    ```
 
 2. Error : Error uninstall six
