@@ -52,6 +52,9 @@ java-test   latest   462f0086460d   7 minutes ago    841MB <-- yadaa it's still 
    RUN pip install --no-cache-dir -r /usr/src/myapp/requirement.txt  --ignore-installed six
    ```
 
+3. Error : wget download ijava-x.zip
+   Solution : rerun docker build
+
 Reff :
 
 - <https://github.com/docker/compose/issues/8105>
