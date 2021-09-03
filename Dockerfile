@@ -10,5 +10,4 @@ COPY . /usr/src/myapp
 RUN pip install --no-cache-dir -r /usr/src/myapp/requirement.txt --ignore-installed six
 
 WORKDIR /usr/src/myapp
-RUN javac Main.java
 CMD ["sh","/usr/src/myapp/run.sh"]

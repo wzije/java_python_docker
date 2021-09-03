@@ -2,3 +2,5 @@
 
 java --version
 python --version
+javac Main.java
+java Main
