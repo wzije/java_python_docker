@@ -9,5 +9,9 @@ RUN pip3 install --no-cache --upgrade pip
 COPY . /usr/src/myapp
 RUN pip install --no-cache-dir -r /usr/src/myapp/requirement.txt --ignore-installed six
 
+RUN wget ijava-kernel.zip https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip && \
+  unzip ijava-1.3.0.zip -d ijava-kernel && \
+  python ijava-kernel/install.py --sys-prefix
+
 WORKDIR /usr/src/myapp
 CMD ["sh","/usr/src/myapp/run.sh"]
