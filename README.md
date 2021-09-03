@@ -12,6 +12,13 @@
 - Run `docker run -it --rm --name java-python-app java-python-img`
 - accessing inside docker `docker run -it java-python-img sh`
 
+## How much the image size?
+
+```vim
+docker images | grep java
+java-test   latest   462f0086460d   7 minutes ago    841MB <-- yadaa it's still big enough ha? :v
+```
+
 ## Troubleshot
 
 1. Error : error install pyzmq==20.0.0
